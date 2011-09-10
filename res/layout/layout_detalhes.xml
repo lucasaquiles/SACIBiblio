@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+	<TextView android:layout_alignParentLeft="true" android:id="@+id/txtTitulo"
+		android:layout_width="wrap_content" android:text="TextView"
+		android:layout_height="wrap_content"></TextView>
+
+	<TextView android:layout_alignParentLeft="true" android:id="@+id/txtDescricao"
+		android:layout_width="wrap_content" android:text="TextView"
+		android:layout_height="wrap_content" android:layout_below="@+id/txtTitulo"></TextView>
+
+	<TextView android:layout_alignParentLeft="true" android:id="@+id/txtQuantidade"
+		android:layout_width="wrap_content" android:text="TextView"
+		android:layout_height="wrap_content" android:layout_below="@+id/txtDescricao"></TextView>
+
+	<TextView android:layout_alignParentLeft="true" android:id="@+id/txtStatus"
+		android:layout_width="wrap_content" android:text="TextView"
+		android:layout_height="wrap_content" android:layout_below="@+id/txtQuantidade"></TextView>
+	
+	
+	<Button android:text="reservar" android:layout_alignParentLeft="true" android:layout_width="wrap_content" android:id="@+id/btnReserva" android:layout_height="wrap_content"
+	
+	android:layout_below="@+id/txtStatus"
+	></Button>
+		
+		
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+
+
+
+	<AutoCompleteTextView android:id="@+id/autoCompleteLivros"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textSize="14px" android:completionThreshold="2"
+		android:hint="que livro você procura?" android:autoText="false"
+		android:completionHint="false"></AutoCompleteTextView>
+
+
+	<Button android:text="Buscar" android:layout_alignParentRight="true"
+		android:layout_width="wrap_content" android:id="@+id/btnBuscar"
+		android:layout_height="wrap_content">
+	</Button>
+
+
+	<TextView android:id="@+id/txtTitulo" android:layout_width="wrap_content"
+		android:text="TextView" android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/autoCompleteLivros"
+		android:layout_below="@+id/btnBuscar"></TextView>
+
+	<TextView android:layout_below="@+id/txtTitulo" android:id="@+id/txtDescricao"
+		android:layout_width="wrap_content" android:text="TextView"
+		android:layout_height="wrap_content"></TextView>
+
+	<Button android:text="Ver detalhes" android:layout_alignParentRight="true"
+		android:layout_width="wrap_content" android:id="@+id/btnDetalhe"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtDescricao">
+	</Button>
+
+
+</RelativeLayout>
